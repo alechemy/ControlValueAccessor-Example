@@ -1,0 +1,13 @@
+<p>input:</p>
+
+<app-custom-input [(ngModel)]="external" 
+                  name="externalVal"
+                  #validations="ngModel">
+</app-custom-input>
+
+<button (click)="external = 'external clear'">Clear External</button>
+<br/>
+<span>external: {{external}}</span>
+<pre>{{validations.control | json}}</pre>
+
+
